@@ -1,0 +1,272 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p, input, button {
+  font-size: inherit;
+}
+
+input, button {
+  border: 0;
+  font-family: inherit;
+}
+
+input:focus, button:focus {
+  outline: none;
+}
+
+ul, li {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+a:visited {
+  text-decoration: none;
+}
+
+a, button, input[type=submit] {
+  cursor: pointer;
+  background: none;
+  cursor: pointer;
+}
+
+html, body {
+  font-size: 16px;
+  color: #323232;
+  font-weight: normal;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+.container {
+  width: 100%;
+  height: inherit;
+}
+
+:root {
+  /* Menu */
+  --orange:#E3B873;
+  --white:#fff;
+  --black: #131313;
+  --black2: #363636;
+  --grey: ##959595;
+  /* Font Size */
+  --small-font: 11px;
+  --medium-font: 22px;
+  --big-font: 40px;
+  /* Font Weight */
+  --light: 400;
+  --semi-bold: 600;
+  --bold: 700;
+  /* Line height */
+  --small-height: 15px;
+  --medium-height: 36px;
+  --big-height: 54px;
+  /* Fonts */
+  --NS-font: "Nunito Sans", sans-serif;
+  --YO-font: "Yeseva One", serif;
+}
+
+@font-face {
+  font-family: "Nunito Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  src: url("../fonts/Nunito-Sans.ttf") format("truetype"), url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Yeseva+One&display=swap");
+}
+@font-face {
+  font-family: "Yeseva One", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  src: url("../fonts/Yeseva-One.ttf") format("truetype"), url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Yeseva+One&display=swap");
+}
+.slider__controls {
+  display: flex;
+  flex-direction: row;
+  padding-top: 40px;
+  gap: 20px;
+}
+.slider__controls .arrow, .slider__controls .dot {
+  color: #fff;
+  font-size: 50px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  cursor: pointer;
+}
+
+.slider__images {
+  margin: 0 auto;
+  width: 800px;
+  height: 450px;
+  padding-left: 50px;
+}
+.slider__images .image {
+  background-size: contain;
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+}
+
+.hidden {
+  display: none;
+}
+
+.project {
+  background-color: var(--black);
+  height: 100%;
+}
+.project .project__wrapper {
+  padding: 110px 134px;
+}
+.project .project__wrapper .projectTextBlock__wrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+}
+.project .project__wrapper .projectNavigation__wrapper {
+  padding-bottom: 45px;
+}
+
+.projectNavigation__list {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  color: var(--white);
+  font-family: var(--YO-font);
+  gap: 60px;
+}
+.projectNavigation__list .projectNavigation__list-item {
+  opacity: 0.3;
+}
+.projectNavigation__list .projectNavigation__list-item:hover {
+  transition: 0.3s ease;
+  opacity: 1;
+}
+.projectNavigation__list .active {
+  color: var(--orange);
+  opacity: 1;
+  position: relative;
+}
+.projectNavigation__list .active:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 22px;
+  width: 100%;
+  height: 1px;
+  background: var(--orange);
+}
+.projectNavigation__list .active:hover {
+  color: var(--white);
+  transition: 0.3s ease;
+}
+
+.projectText {
+  width: 442px;
+}
+.projectText .projectText__wrapper {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 100%;
+}
+.projectText .projectText__wrapper .projectText__title {
+  color: var(--orange);
+  font-size: var(--big-font);
+  line-height: var(--big-height);
+  font-family: var(--YO-font);
+  text-transform: uppercase;
+  margin-bottom: 34px;
+}
+.projectText .projectText__wrapper .projectText__description {
+  color: var(--white);
+  font-size: 14px;
+  line-height: 26px;
+}
+
+.cities {
+  margin-top: 42px;
+}
+.cities .cities__wrapper {
+  width: 442px;
+  height: 200px;
+}
+.cities .cities__wrapper .cities__list {
+  display: grid;
+  grid-template-columns: repeat(2, 220px);
+  gap: 34px;
+}
+.cities .cities__wrapper .cities__list-wrapper {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 9px;
+}
+.cities .cities__wrapper .cities__list-wrapper .cities__list-h2 {
+  color: var(--orange);
+  font-family: var(--YO-font);
+  font-size: var(--medium-font);
+  text-transform: uppercase;
+}
+.cities .cities__wrapper .cities__list-wrapper .cities__list-span {
+  color: var(--white);
+  font-family: var(--NS-font);
+  font-size: 13px;
+}
+.cities .cities__wrapper .cities__slider {
+  padding-top: 80px;
+}/*# sourceMappingURL=main.css.map */

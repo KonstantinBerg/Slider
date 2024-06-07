@@ -1,0 +1,103 @@
+.project {
+  background-color: var(--black);
+  height: 100%;
+}
+.project .project__wrapper {
+  padding: 110px 134px;
+}
+.project .project__wrapper .projectTextBlock__wrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+}
+.project .project__wrapper .projectNavigation__wrapper {
+  padding-bottom: 45px;
+}
+
+.projectNavigation__list {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  color: var(--white);
+  font-family: var(--YO-font);
+  gap: 60px;
+}
+.projectNavigation__list .projectNavigation__list-item {
+  opacity: 0.3;
+}
+.projectNavigation__list .projectNavigation__list-item:hover {
+  transition: 0.3s ease;
+  opacity: 1;
+}
+.projectNavigation__list .active {
+  color: var(--orange);
+  opacity: 1;
+  position: relative;
+}
+.projectNavigation__list .active:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 22px;
+  width: 100%;
+  height: 1px;
+  background: var(--orange);
+}
+.projectNavigation__list .active:hover {
+  color: var(--white);
+  transition: 0.3s ease;
+}
+
+.projectText {
+  width: 442px;
+}
+.projectText .projectText__wrapper {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 100%;
+}
+.projectText .projectText__wrapper .projectText__title {
+  color: var(--orange);
+  font-size: var(--big-font);
+  line-height: var(--big-height);
+  font-family: var(--YO-font);
+  text-transform: uppercase;
+  margin-bottom: 34px;
+}
+.projectText .projectText__wrapper .projectText__description {
+  color: var(--white);
+  font-size: 14px;
+  line-height: 26px;
+}
+
+.cities {
+  margin-top: 42px;
+}
+.cities .cities__wrapper {
+  width: 442px;
+  height: 200px;
+}
+.cities .cities__wrapper .cities__list {
+  display: grid;
+  grid-template-columns: repeat(2, 220px);
+  gap: 34px;
+}
+.cities .cities__wrapper .cities__list-wrapper {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 9px;
+}
+.cities .cities__wrapper .cities__list-wrapper .cities__list-h2 {
+  color: var(--orange);
+  font-family: var(--YO-font);
+  font-size: var(--medium-font);
+  text-transform: uppercase;
+}
+.cities .cities__wrapper .cities__list-wrapper .cities__list-span {
+  color: var(--white);
+  font-family: var(--NS-font);
+  font-size: 13px;
+}
+.cities .cities__wrapper .cities__slider {
+  padding-top: 80px;
+}/*# sourceMappingURL=hero.css.map */

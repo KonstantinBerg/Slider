@@ -1,0 +1,50 @@
+html, body {
+  font-size: 16px;
+  color: #323232;
+  font-weight: normal;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+.container {
+  width: 100%;
+  height: inherit;
+}
+
+:root {
+  /* Menu */
+  --orange:#E3B873;
+  --white:#fff;
+  --black: #131313;
+  --black2: #363636;
+  --grey: ##959595;
+  /* Font Size */
+  --small-font: 11px;
+  --medium-font: 22px;
+  --big-font: 40px;
+  /* Font Weight */
+  --light: 400;
+  --semi-bold: 600;
+  --bold: 700;
+  /* Line height */
+  --small-height: 15px;
+  --medium-height: 36px;
+  --big-height: 54px;
+  /* Fonts */
+  --NS-font: "Nunito Sans", sans-serif;
+  --YO-font: "Yeseva One", serif;
+}
+
+@font-face {
+  font-family: "Nunito Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  src: url("../fonts/Nunito-Sans.ttf") format("truetype"), url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Yeseva+One&display=swap");
+}
+@font-face {
+  font-family: "Yeseva One", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  src: url("../fonts/Yeseva-One.ttf") format("truetype"), url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Yeseva+One&display=swap");
+}/*# sourceMappingURL=root_final.css.map */
